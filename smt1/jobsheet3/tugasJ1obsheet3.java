@@ -6,6 +6,8 @@ public class tugasJ1obsheet3 {
     
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
+        
+        //input
         System.out.print("Total Penggunaan Listrik: ");
         int totalListrik=sc.nextInt();
         double tagihan=1500;

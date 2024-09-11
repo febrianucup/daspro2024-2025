@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class tugas2jobsheet3 {
+public class GajiKaryawan19 {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        double jmlhJamKerja, upahPerjam, bonus, pajak, gajiBulanan, totalBonus, totalGajiPajak; 
+        double jmlhJamKerja, upahPerjam, bonus, pajak, gajiBulanan, totalBonus, totalGajiPajak, gajiPlusBonus, gajiBersih; 
         
         System.out.print("Jumlah Jam Kerja: ");
         jmlhJamKerja=sc.nextDouble();
@@ -15,12 +15,13 @@ public class tugas2jobsheet3 {
         //eksekusi
         gajiBulanan=jmlhJamKerja*upahPerjam;
         totalBonus=gajiBulanan*bonus;
-        gajiBulanan+=totalBonus;
+        gajiPlusBonus=gajiBulanan+totalBonus;
         totalGajiPajak=gajiBulanan*pajak;
-        gajiBulanan-=totalGajiPajak;
+        gajiBersih=gajiPlusBonus-totalGajiPajak;
 
-        System.out.println("Total Gajimu bulan ini adalah"+(String.format("%.2f", gajiBulanan)));
-
+        System.out.println("Total Gajimu bulan ini adalah "+(String.format("%.2f", gajiBersih)));
+        sc.close();
+        
     }
     
 }

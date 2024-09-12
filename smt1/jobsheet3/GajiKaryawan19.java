@@ -16,12 +16,11 @@ public class GajiKaryawan19 {
         gajiBulanan=jmlhJamKerja*upahPerjam;
         totalBonus=gajiBulanan*bonus;
         gajiPlusBonus=gajiBulanan+totalBonus;
-        totalGajiPajak=gajiBulanan*pajak;
+        totalGajiPajak=gajiPlusBonus*pajak;
         gajiBersih=gajiPlusBonus-totalGajiPajak;
 
         System.out.println("Total Gajimu bulan ini adalah "+(String.format("%.2f", gajiBersih)));
         sc.close();
-        
     }
     
 }

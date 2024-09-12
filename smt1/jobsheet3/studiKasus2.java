@@ -33,5 +33,6 @@ public class studiKasus2 {
         System.out.println("Nominal Bayar adalah Rp. " + nominalBayar);
         System.out.println("Nominal Int adalah Rp. " + nominalInt);
         System.out.println("totalByte: " + totalByte);
+        System.out.println(totalHarga);
     }
 }

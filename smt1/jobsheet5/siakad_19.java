@@ -38,29 +38,36 @@ public class siakad_19{
         System.out.println("Nilai Akhir: " + nilaiAkhir);
         System.out.println("Nilai Akhir Dengan Bobot: " + nilaiAkhirBobot);
 
+        //deklarasi variabel
+        String nilaiHuruf, kualifikasi;
+
         //pengecakan nilai dengan huruf dan kualifikasi nilai
         if(nilaiAkhir >80 && nilaiAkhir<=100){
-            System.out.println("Nilai Huruf: A");
-            System.out.println("Kualifikasi: sangat baik");
+            nilaiHuruf="A";
+            kualifikasi="Sangat Baik";
         }else if(nilaiAkhir >73 && nilaiAkhir<=80){
-            System.out.println("Nilai Huruf: B+");
-            System.out.println("Kualifikasi: Lebih dari baik");
+            nilaiHuruf="B+";
+            kualifikasi="Lebih dari Baik";
         }else if(nilaiAkhir>65 && nilaiAkhir<=73){
-            System.out.println("Nilai Huruf: B");
-            System.out.println("Kualifikasi: Baik");
+            nilaiHuruf="B";
+            kualifikasi="Baik";
         }else if(nilaiAkhir >60 && nilaiAkhir<=65){
-            System.out.println("Nilai Huruf: C+");
-            System.out.println("Kualifikasi: Lebih dari cukup");
+            nilaiHuruf="C+";
+            kualifikasi="Lebih dari Cukup";
         }else if(nilaiAkhir>50 && nilaiAkhir<=60){
-            System.out.println("Nilai Huruf: C");
-            System.out.println("Kualifikasi: Cukup");
+            nilaiHuruf="C";
+            kualifikasi="Cukup";
         }else if(nilaiAkhir>39 && nilaiAkhir<=50){
-            System.out.println("Nilai Huruf: D");
-            System.out.println("Kualifikasi: Kurang");
-        }else if(nilaiAkhir<=39){
-            System.out.println("Nilai Huruf: E");
-            System.out.println("Kualifikasi: Gagal");
+            nilaiHuruf="D";
+            kualifikasi="Kurang";
+        }else {
+            nilaiHuruf="E";
+            kualifikasi="Gagal";
         }
+
+        //output
+        System.out.println("Nilai Huruf: " + nilaiHuruf);
+        System.out.println("Kualifikasi: " + kualifikasi);
             
         
 }

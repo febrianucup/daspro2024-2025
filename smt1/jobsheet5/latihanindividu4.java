@@ -22,4 +22,7 @@ public class latihanindividu4{
             System.out.println("Umur Dikategorikan Sebagai Lansia");
         }
     }
+
+    int a=10;
+    a%=5;
 }

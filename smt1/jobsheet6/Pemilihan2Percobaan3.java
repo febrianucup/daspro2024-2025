@@ -14,7 +14,7 @@ public class Pemilihan2Percobaan3 {
 
         //input
         System.out.print("Masukkan Kategori= ");
-        kategori=input.nextLine().toLowerCase();
+        kategori=input.nextLine();
         System.out.print("Masukkan Jumlah Penghasilan= ");
         penghasilan=input.nextInt();
 

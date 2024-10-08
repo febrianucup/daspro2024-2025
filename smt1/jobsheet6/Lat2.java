@@ -9,7 +9,7 @@ public class Lat2 {
         //deklarasi var
         String jenisBuku;
         int jumlah;
-        double diskon=0;
+        double diskon;
 
         //input
         System.out.print("Jenis Buku: ");
@@ -30,8 +30,12 @@ public class Lat2 {
             }else{
                 diskon=diskon+0.01;
             }
-        }else if(jumlah>3){
-            diskon=0.05;
+        }else {
+            if(jumlah>3){
+                diskon=0.05;
+            }else{
+                diskon=0;
+            }
         }
 
         //output

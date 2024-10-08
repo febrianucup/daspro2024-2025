@@ -31,10 +31,10 @@ public class Lat2 {
                 diskon=diskon+0.01;
             }
         }else if(jumlah>3){
-            diskon=diskon +0.05;
+            diskon=0.05;
         }
 
         //output
-        System.out.println("Total diskon yang diterima sebesadr: " + diskon + "%");
+        System.out.println("Total diskon yang diterima sebesar: " + diskon + "%");
     }
 }

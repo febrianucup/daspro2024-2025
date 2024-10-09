@@ -8,7 +8,7 @@ public class Bioskop {
 
         //deklarasi variabel
         int jumlahTiket=0, tiket=50000, totalTiket=0;
-        double diskon=0, totalHarga=0, totalHargaDiskon=0, totalPendapatan=0;
+        double diskon=0, totalHarga=0, totalPendapatan=0;
         String respon;
 
         //looping
@@ -19,22 +19,22 @@ public class Bioskop {
             if(jumlahTiket<0){
                 System.out.println("Input invalid");
             }else if(jumlahTiket>4){
-                diskon=0.1;
+                diskon=0.1*tiket;
             }else if(jumlahTiket>10){
-                diskon=0.15;
+                diskon=0.15*tiket;
             }else{
-                diskon=0;
+                diskon=0*tiket;
             }
             
             //hitung harga, total tiket, harga diskon
             totalTiket+=jumlahTiket;
-            totalHarga=jumlahTiket*tiket;
+            System.out.println("Diskon: " + diskon);
+            totalHarga=jumlahTiket*(tiket-diskon);
             System.out.println("Total harga: "+totalHarga);
-            totalHargaDiskon=totalHarga-(totalHarga*diskon);
-            System.out.println("Total Harga plus diskon: " + totalHargaDiskon);
-            totalPendapatan+=totalHargaDiskon;
+            totalPendapatan+=totalHarga;
             
             //pemilihan untuk melanjutkan looping atau tidak
+            input.nextLine();
             System.out.print("Lanjutkan Transaksi (y/n)? ");
             respon=input.nextLine();
             if(respon.equalsIgnoreCase("y")){

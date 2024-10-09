@@ -2,7 +2,7 @@ package jobsheet7;
 
 import java.util.Scanner;
 
-public class NilaiMhsSiakad {
+public class SiakadFor19 {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
 

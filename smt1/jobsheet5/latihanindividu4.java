@@ -23,6 +23,5 @@ public class latihanindividu4{
         }
     }
 
-    int a=10;
-    a%=5;
+   
 }

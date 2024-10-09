@@ -9,13 +9,15 @@ public class Bioskop {
         //deklarasi variabel
         int jumlahTiket=0, tiket=50000, totalTiket=0, jumlahPengunjung;
         double diskon=0, totalHarga=0, totalHargaDiskon=0, totalPendapatan=0;
+        String respon;
 
         //input
-        System.out.print("Masukkan jumlah pengunjung hari ini: ");
-        jumlahPengunjung=input.nextInt();
+        // System.out.print("Masukkan jumlah pengunjung hari ini: ");
+        // jumlahPengunjung=input.nextInt();
 
         //looping
-        for(int i=1;i<=jumlahPengunjung;i++){
+        while(true){
+            //input jumlah tiket
             System.out.print("Masukkan Jumlah Tiket: ");
             jumlahTiket=input.nextInt();
             if(jumlahTiket<0){
@@ -27,13 +29,27 @@ public class Bioskop {
             }else{
                 diskon=0;
             }
-
+            
+            //hitung harga, total tiket, harga diskon
             totalTiket+=jumlahTiket;
             totalHarga=jumlahTiket*tiket;
             System.out.println("Total harga: "+totalHarga);
             totalHargaDiskon=totalHarga-(totalHarga*diskon);
             System.out.println("Total Harga plus diskon: " + totalHargaDiskon);
             totalPendapatan+=totalHargaDiskon;
+            
+            //pemilihan untuk melanjutkan looping atau tidak
+            input.nextLine();
+            System.out.print("Lanjutkan Transaksi (y/n)? ");
+            respon=input.nextLine();
+            if(respon.equalsIgnoreCase("y")){
+                continue;
+            }else if(respon.equalsIgnoreCase("n")){
+                break;
+            }else{
+                System.out.println("Input invalid, silahkan mengulang pemesanan");
+                break;
+            }
         }
 
         System.out.println("Total Penjualan Tiket Hari Ini: " + totalTiket);

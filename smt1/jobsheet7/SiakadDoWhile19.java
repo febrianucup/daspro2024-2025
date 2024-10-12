@@ -12,7 +12,7 @@ public class SiakadDoWhile19 {
         int hargaKopi=12000, hargaTeh=7000, hargaRoti=20000;
 
         do{
-            System.out.print("Masukkan Nama Pelanggan: ");
+            System.out.print("Masukkan Nama Pelanggan (Masukkan 'batal' untuk keluar): ");
             namaPelanngan=input.nextLine();
 
             if(namaPelanngan.equalsIgnoreCase("batal")){

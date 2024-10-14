@@ -16,8 +16,10 @@ public class SiakadWhile19 {
 
         //perulangan
         while(i<jmlh){
+            i++;
             System.out.print("Nilai Mahasiswa " + (i+1) + ": ");
             nilai=input.nextInt();
+
             if(nilai<0 || nilai>100){
                 System.out.println("Nilai Tidak Valid, Mohon Input Nilai Kembali");
                 continue;
@@ -39,7 +41,7 @@ public class SiakadWhile19 {
                 System.out.println("Nilai Mahasiswa ke-" + (i+1) + " adalah E");
             }
 
-            i++;
+            
         }
     }
 }

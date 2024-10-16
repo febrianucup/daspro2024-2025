@@ -16,7 +16,6 @@ public class SiakadWhile19 {
 
         //perulangan
         while(i<jmlh){
-            i++;
             System.out.print("Nilai Mahasiswa " + (i+1) + ": ");
             nilai=input.nextInt();
 
@@ -41,7 +40,7 @@ public class SiakadWhile19 {
                 System.out.println("Nilai Mahasiswa ke-" + (i+1) + " adalah E");
             }
 
-            
+            i++;
         }
     }
 }

@@ -7,10 +7,14 @@ public class SiakadFor19 {
         Scanner input=new Scanner(System.in);
 
         //deklarasi variabel
-        double nilai, tertinggi=0, terendah=100, lulus=0, tidakLulus=0;
+        double nilai, tertinggi=0, terendah=100, lulus=0, tidakLulus=0, jmlhMhs;
+
+        //input
+        System.out.print("Input Jumlah Mahasiswa: ");
+        jmlhMhs=input.nextDouble();
 
         //looping
-        for(int i=1;i<=10;i++){
+        for(int i=1;i<=jmlhMhs;i++){
             System.out.print("Masukkan Nilai: ");
             nilai=input.nextDouble();
             if(nilai>tertinggi){

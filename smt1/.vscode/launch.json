@@ -1,112 +1,147 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "GajiKaryawan19",
-            "request": "launch",
-            "mainClass": "GajiKaryawan19",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "Latihan19",
-            "request": "launch",
-            "mainClass": "Latihan19",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "MyFirstJava19",
-            "request": "launch",
-            "mainClass": "MyFirstJava19",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "TagihanListrik19",
-            "request": "launch",
-            "mainClass": "TagihanListrik19",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "contohOperator19",
-            "request": "launch",
-            "mainClass": "contohOperator19",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "contohTipeData19",
-            "request": "launch",
-            "mainClass": "contohTipeData19",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "contohVariabel",
-            "request": "launch",
-            "mainClass": "contohVariabel",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "Pemilihan2Pecobaan1No19",
-            "request": "launch",
-            "mainClass": "jobsheet6.Pemilihan2Pecobaan1No19",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "Pemilihan2Percobaan2No19",
-            "request": "launch",
-            "mainClass": "jobsheet6.Pemilihan2Percobaan2No19",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "Pemilihan2Percobaan3",
-            "request": "launch",
-            "mainClass": "jobsheet6.Pemilihan2Percobaan3",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "percobaan1",
-            "request": "launch",
-            "mainClass": "percobaan1",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "studiKasus1",
-            "request": "launch",
-            "mainClass": "studiKasus1",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "studiKasus2",
-            "request": "launch",
-            "mainClass": "studiKasus2",
-            "projectName": "smt1_c11fc725"
-        },
-        {
-            "type": "java",
-            "name": "touring",
-            "request": "launch",
-            "mainClass": "touring",
-            "projectName": "smt1_c11fc725"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Responden",
+      "request": "launch",
+      "mainClass": "jobsheet11.Responden",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "BioskoWScanner19",
+      "request": "launch",
+      "mainClass": "jobsheet11.BioskoWScanner19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Siakad19",
+      "request": "launch",
+      "mainClass": "jobsheet11.Siakad19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Numbers19",
+      "request": "launch",
+      "mainClass": "jobsheet11.Numbers19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Bioskop19",
+      "request": "launch",
+      "mainClass": "jobsheet11.Bioskop19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "GajiKaryawan19",
+      "request": "launch",
+      "mainClass": "GajiKaryawan19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Latihan19",
+      "request": "launch",
+      "mainClass": "Latihan19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "MyFirstJava19",
+      "request": "launch",
+      "mainClass": "MyFirstJava19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "TagihanListrik19",
+      "request": "launch",
+      "mainClass": "TagihanListrik19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "contohOperator19",
+      "request": "launch",
+      "mainClass": "contohOperator19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "contohTipeData19",
+      "request": "launch",
+      "mainClass": "contohTipeData19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "contohVariabel",
+      "request": "launch",
+      "mainClass": "contohVariabel",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Pemilihan2Pecobaan1No19",
+      "request": "launch",
+      "mainClass": "jobsheet6.Pemilihan2Pecobaan1No19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Pemilihan2Percobaan2No19",
+      "request": "launch",
+      "mainClass": "jobsheet6.Pemilihan2Percobaan2No19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Pemilihan2Percobaan3",
+      "request": "launch",
+      "mainClass": "jobsheet6.Pemilihan2Percobaan3",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "percobaan1",
+      "request": "launch",
+      "mainClass": "percobaan1",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "studiKasus1",
+      "request": "launch",
+      "mainClass": "studiKasus1",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "studiKasus2",
+      "request": "launch",
+      "mainClass": "studiKasus2",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "touring",
+      "request": "launch",
+      "mainClass": "touring",
+      "projectName": "smt1_c11fc725"
+    }
+  ]
 }

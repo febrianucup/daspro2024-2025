@@ -26,14 +26,17 @@ public class Responden {
             int totalHasilResponden=0;
 
             for(int j=0;j<survei[i].length;j++){
-                System.out.print("Input respon soal ke-" + (j+1) + ": ");
-                survei[i][j]=input.nextInt();
-                respon=survei[i][j];
-                if (respon>5 || respon<=0) {
-                    System.out.println("Masukkan respon dengan benar!");
-                    continue;
-                }else{
-                    totalHasilResponden+=respon;
+                while (true) { 
+                    System.out.print("Input respon soal ke-" + (j+1) + ": ");
+                    survei[i][j]=input.nextInt();
+                    respon=survei[i][j];
+                    if (respon>5 || respon<=0) {
+                        System.out.println("Masukkan respon dengan benar!");
+                        continue;
+                    }else{
+                        totalHasilResponden+=respon;
+                        break;
+                    }
                 }
             }
 
@@ -52,12 +55,12 @@ public class Responden {
                 totalPersoal+=survei[j][i];
             }
             double rata2Persoal=(double)totalPersoal/responden;
-            System.out.println("Rata-rata soal ke-" + (i+1) + ": " + rata2Persoal);
+            System.out.println("Rata-rata soal ke-" + (i+1) + ": " + String.format("%.3f", rata2Persoal));
         }
         
         System.out.println("========================================");
         //menghitung rata2 keseluruhan
         double rata2Keseluruhan=(double)totalKeseluruhan/responden;
-        System.out.println("Rata-rata keseluruhan: " + rata2Keseluruhan);
+        System.out.println("Rata-rata keseluruhan: " + String.format("%.3f", rata2Keseluruhan));
     }
 }

@@ -20,25 +20,28 @@ public class BioskoWScanner19 {
             if (opsiMenu==1) {
                 System.out.print("Masukkan nama: ");
                 nama=input.nextLine();
-                System.out.print("Masukkan baris: ");
-                baris=input.nextInt();
-                System.out.print("Masukkan kolom: ");
-                kolom=input.nextInt();
-                input.nextLine();
-
-                if (true) {
-                    boolean kursiTerisi=false;
-                    if (penonton[baris-1][kolom-1]==null) {
-                        penonton[baris-1][kolom-1]=nama;
-                        System.out.println("Kursi berasil dipesan");
-                        kursiTerisi=true;            
-                    }
                 
-                    if (!kursiTerisi) {
-                        System.out.println("Kursi telah terisi silahkan input ulang!");
-                        continue;
+                do { 
+                    System.out.println("Nomor Baris 1-4");
+                    System.out.print("Masukkan baris: ");
+                    baris=input.nextInt();
+                    if(baris<=0 || baris>4){
+                        System.out.println("Nomor Baris tidak tersedia, silahkan input ulang!!");
                     }
-                }
+                } while (baris<=0 || baris>4);
+
+                do { 
+                    System.out.println("Nomor Kolom 1-2");
+                    System.out.print("Masukkan kolom: ");
+                    kolom=input.nextInt();
+                    if(kolom<=0 || kolom>2){
+                        System.out.println("Nomor Kolom tidak tersedia, silahkan input ulang!!");
+                    }
+                } while (kolom<=0 || kolom>2);
+
+                penonton[baris-1][kolom-1]=nama;
+
+                input.nextLine();
 
                 System.out.print("Input penonton lainnya? (y/n)");
                 next=input.nextLine();
@@ -55,9 +58,6 @@ public class BioskoWScanner19 {
                         if(daftarnama!=null){
                             System.out.println("-" + daftarnama);
                         }
-                        if (daftarnama==null) {
-                            System.out.println("-" + "***");
-                        }  
                     }
                     
                 } 
@@ -67,7 +67,7 @@ public class BioskoWScanner19 {
                 break;
             }else{
                 System.out.println("Inputan invalid silahkan input menu ulang!");
-                continue;
+                break;
             }
         }
     }while(opsiMenu!=3);

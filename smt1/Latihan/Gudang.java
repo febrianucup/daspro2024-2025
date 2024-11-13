@@ -81,7 +81,12 @@ public class Gudang {
                     indeksTerbanyak=j;
                 }
             }
-            System.out.println("Barang ke-" + (i+1) + ": " + lokasi[indeksTerbanyak]);
+            if (informasiStokBarang[i][indeksTerbanyak]!=0) {
+                System.out.println("Barang ke-" + (i+1) + ": " + lokasi[indeksTerbanyak]);
+            }else{
+                System.out.println("Barang ke-" + (i+1) + ": " + "Barang tidak tersedia");
+            }
+            
         }
     }
 }

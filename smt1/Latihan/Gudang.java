@@ -44,9 +44,8 @@ public class Gudang {
         //tabel stok gudang
         System.out.println("Tabel stok gudang:");
         System.out.print("\t");
-        for (String lokasiKota : lokasi) {
-            System.out.print("\t");
-            System.out.print(lokasiKota);
+        for (int i=0;i<lokasi.length;i++) {
+            System.out.print(String.format("%12s", lokasi[i]));
         }
 
         System.out.println();
@@ -54,9 +53,8 @@ public class Gudang {
         for(int i=0;i<informasiStokBarang.length;i++){
             System.out.print("Barang " + (i+1) + ": " );
             for (int j = 0; j < informasiStokBarang[i].length; j++) {
-                System.out.print("\t");
-                System.out.print(informasiStokBarang[i][j] );
-            }
+                System.out.print(String.format("%10s", informasiStokBarang[i][j] ));
+            } 
             System.out.println();
         }
         

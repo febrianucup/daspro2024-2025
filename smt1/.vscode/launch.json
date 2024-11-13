@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Gudang",
+      "request": "launch",
+      "mainClass": "Latihan.Gudang",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
       "name": "Responden",
       "request": "launch",
       "mainClass": "jobsheet11.Responden",

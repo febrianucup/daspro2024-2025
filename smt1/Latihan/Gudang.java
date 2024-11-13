@@ -86,6 +86,4 @@ public class Gudang {
             System.out.println("Barang ke-" + (i+1) + ": " + lokasi[indeksTerbanyak]);
         }
     }
-
-   
 }

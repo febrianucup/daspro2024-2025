@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SistemAbsensi",
+      "request": "launch",
+      "mainClass": "Latihan.SistemAbsensi",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "SkorBola",
+      "request": "launch",
+      "mainClass": "Latihan.SkorBola",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
       "name": "Gudang",
       "request": "launch",
       "mainClass": "Latihan.Gudang",

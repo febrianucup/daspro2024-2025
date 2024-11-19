@@ -28,7 +28,7 @@ public class Gudang {
         System.out.println();
 
         //input jenis barang, lokasi, program tambah stok
-        int jenisBarang, kota, tambahStok = 0;
+        int jenisBarang, kota, tambahStok;
         for (int i = 0; i < informasiStokBarang.length; i++) {
             System.out.print("Jenis barang (0-" + (jmlhJenis - 1) + "): ");
             jenisBarang = input.nextInt();

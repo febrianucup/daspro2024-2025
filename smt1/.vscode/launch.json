@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BioskoWScanner",
+      "request": "launch",
+      "mainClass": "Latihan.BioskoWScanner",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
       "name": "SistemAbsensi",
       "request": "launch",
       "mainClass": "Latihan.SistemAbsensi",

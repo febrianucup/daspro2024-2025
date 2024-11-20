@@ -38,7 +38,7 @@ public class SistemAbsensi {
         }
 
         System.out.println();
-        
+
         //tabel kehadiran
         System.out.println("Tabel kehadiran:");
         System.out.println("Keterangan: H=Hadir, TH=Tidak Hadir");
@@ -80,6 +80,7 @@ public class SistemAbsensi {
         System.out.println();
 
         //siswa yang tidak hadir lebih dari 3 kali
+        boolean absen=false;
         System.out.println("Siswa yang tidak hadir selama lebih dari 3 hari: ");
         for (int i = 0; i < dataAbsensi.length; i++) {
             hadir=0;
@@ -92,8 +93,12 @@ public class SistemAbsensi {
                 }
             }
             if (tidakHadir>3) {
+                absen=true;
                 System.out.println("-" + namaSiswa[i]);
             }
+        }
+        if (!absen) {
+            System.out.println("Tidak ada");
         }
     }
 }

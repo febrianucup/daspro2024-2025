@@ -77,13 +77,6 @@ public class HasilPemilu {
         System.out.println("---------------------");
 
         //wilayah dengan suara terbanyak
-        int[] totalTiapWil = new int[jmlhWil];
-        for (int i = 0; i < wilayah.length; i++) {
-            for (int j = 0; j < namaCalon.length; j++) {
-                totalTiapWil[i] += suara[i][j];
-            }
-        }
-
         for (int i = 0; i < namaCalon.length; i++) {
             int terbanyak = 0;
             int idxTrbnyk = 0;

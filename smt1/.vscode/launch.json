@@ -6,6 +6,76 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Percobaan3",
+      "request": "launch",
+      "mainClass": "jobshet14.Percobaan3",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Percobaan2",
+      "request": "launch",
+      "mainClass": "jobshet14.Percobaan2",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Percobaan1",
+      "request": "launch",
+      "mainClass": "jobshet14.Percobaan1",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "ProgramKu19",
+      "request": "launch",
+      "mainClass": "jobsheet12.ProgramKu19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Kafe19",
+      "request": "launch",
+      "mainClass": "jobsheet12.Kafe19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "PengunjungCafe19",
+      "request": "launch",
+      "mainClass": "jobsheet12.PengunjungCafe19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Kafe19_2",
+      "request": "launch",
+      "mainClass": "jobsheet12.Kafe19_2",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "PenjualanKafe",
+      "request": "launch",
+      "mainClass": "jobsheet12.PenjualanKafe",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Kubus19",
+      "request": "launch",
+      "mainClass": "jobsheet12.Kubus19",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Percobaan619",
+      "request": "launch",
+      "mainClass": "jobsheet12.Percobaan619",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
       "name": "HasilPemilu",
       "request": "launch",
       "mainClass": "HasilPemilu",

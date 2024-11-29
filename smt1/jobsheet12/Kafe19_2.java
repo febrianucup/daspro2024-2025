@@ -2,8 +2,8 @@ package jobsheet12;
 
 import java.util.Scanner;
 
-public class Kafe19 {
-    public static void Menu(String namaPelanggan, boolean isMember, String kodePromo) {
+public class Kafe19_2 {
+    public static void   Menu(String namaPelanggan, boolean isMember, String kodePromo) {
         System.out.println("Selamat Datang, " + namaPelanggan + "!");
         
         if (isMember) {
@@ -29,9 +29,9 @@ public class Kafe19 {
         System.out.println("Silahkan Pilih Menu yang Anda Inginkan");
     }
 
-    public static int hitungTotalHarga19(int pilihanMenu, int banyakItem, String kodePromo) {
+    public static int  hitungTotalHarga(int pilihanMenu, int banyakItem, String kodePromo) {
         int[] hargaItems={15000,20000,22000,12000,10000,18000};
-        
+     
         int hargaTotal=hargaItems[pilihanMenu-1]*banyakItem;
         if (kodePromo.equals("DISKON50")) {
             hargaTotal-=hargaTotal*(0.5);
@@ -40,14 +40,14 @@ public class Kafe19 {
         }else{
             System.out.println("Kode invalid");
         }
-        return hargaTotal;
+        return hargaTotal;        
     }
 
-    public static void daftarPengunjung(String... namaPengunjung){
-        for (String nama : namaPengunjung) {
-            System.out.println("-" + nama);
-        }
-    }
+    // public static void daftarPengunjung(String... namaPengunjung){
+    //     for (int i = 0; i < namaPengunjung.length; i++) {
+    //         System.out.println("-" + namaPengunjung);
+    //     }
+    // }
 
     public static void main(String[] args) {
         Scanner input=new  Scanner(System.in);
@@ -64,7 +64,7 @@ public class Kafe19 {
             input.nextLine();
             System.out.print("Lanjut? (y/n) ");
             next=input.nextLine();
-            totalHarga+=hitungTotalHarga19(pilihanMenu, banyakItem, "DISKON50");
+            totalHarga+=hitungTotalHarga(pilihanMenu, banyakItem, "DISKON50");
             totalItem+=banyakItem;
         }while(next.equalsIgnoreCase("y"));
 
@@ -73,6 +73,6 @@ public class Kafe19 {
         System.out.println("Total harga unntuk pesanan anda adalah : Rp. " + totalHarga);
         System.out.println("Total pesanan yang dibeli adalah: " + totalItem + " item");
 
-        daftarPengunjung("Ali", "Budi", "Citra");
+        // daftarPengunjung("Ali", "Budi", "Citra");
     }
 }

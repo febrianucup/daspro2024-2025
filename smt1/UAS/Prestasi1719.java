@@ -1,8 +1,11 @@
+//Muhammad Dwi Febrian
+//Mufliha Hafsyah Shaieza
+
 package UAS;
 
 import java.util.Scanner;
 
-public class Prestasi {
+public class Prestasi1719 {
 
     static Scanner input = new Scanner(System.in);
     static Scanner inputStr = new Scanner(System.in);

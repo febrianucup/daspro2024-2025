@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Prestasi",
+      "request": "launch",
+      "mainClass": "UAS.Prestasi",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "CafeDiskon",
+      "request": "launch",
+      "mainClass": "Latihan.CafeDiskon",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Tugas",
+      "request": "launch",
+      "mainClass": "jobshet14.Tugas",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "CafeDiskon",
+      "request": "launch",
+      "mainClass": "jobshet14.CafeDiskon",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
+      "name": "Tugas3",
+      "request": "launch",
+      "mainClass": "jobshet14.Tugas3",
+      "projectName": "smt1_c11fc725"
+    },
+    {
+      "type": "java",
       "name": "Percobaan3",
       "request": "launch",
       "mainClass": "jobshet14.Percobaan3",

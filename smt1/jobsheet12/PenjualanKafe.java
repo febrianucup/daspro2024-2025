@@ -4,17 +4,19 @@ import java.util.Scanner;
 
 
 public class PenjualanKafe {
+    static String[] menu={"Kopi", "Teh", "Es Degan", "Roti Bakar", "Gorengan"};
     public static void main(String[] args) {
-        String[] menu={"Kopi", "Teh", "Es Degan", "Roti Bakar", "Gorengan"};
         int[][] data=new int[menu.length][7];
+        
 
         inputDataPenjualan(data, menu);
         tabelDataPejualan(data, menu);
-        menuPenjualanTertinggi(data, menu);
+        String penualan=menuPenjualanTertinggi(data, menu);
+        System.out.println("Menu dengan total penjualan tertinggi adalah: " + penualan);
         rata2SetiapMenu(data, menu);
     }
 
-    static void inputDataPenjualan(int[][] a, String[] b){
+    static void inputDataPenjualan(int[][] a, String[] b){//fungsi untuk input data penjualan
         Scanner input=new Scanner(System.in);
         System.out.println("--INPUT DATA PENJUALAN--");
         for (int i = 0; i < 7; i++) {
@@ -27,7 +29,7 @@ public class PenjualanKafe {
         }
     }
 
-    static void tabelDataPejualan(int[][] a, String[] b){
+    static void tabelDataPejualan(int[][] a, String[] b){//fungsi untuk tabel data penjualan
         System.out.println("--Tabel Data Penjualan--");
         System.out.print("\t\t");
         for (int i = 0; i < 7; i++) {
@@ -43,15 +45,20 @@ public class PenjualanKafe {
         }
     }
 
-    static void menuPenjualanTertinggi(int[][] a, String[] b){
-        System.out.println("--Menu Dengan Penjualan Tertinggi");
-        int[] totalPerMenu=new int[b.length];
+    static int[] totalMenu(int[][] a){//fungi untuk menghitung total setiap menu
+        int[] totalPerMenu=new int[a.length];
 
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
                 totalPerMenu[i]+=a[i][j];
             }
         }
+        return totalPerMenu;
+    }
+
+    static String menuPenjualanTertinggi(int[][] a, String[] b){//fungsi untuk mencari menu dengan penjualan tertinggi
+        System.out.println("--Menu Dengan Penjualan Tertinggi--");
+        int[] totalPerMenu=totalMenu(a);
 
         int idx=0;
         int tertinggi=0;
@@ -61,18 +68,12 @@ public class PenjualanKafe {
                 idx=i;
             }
         }
-        System.out.println("Menu dengan total penjualan tertinggi adalah: " + totalPerMenu[idx]);
+        return b[idx];
     }
     
-    static void rata2SetiapMenu(int[][] a, String[] b){
+    static void rata2SetiapMenu(int[][] a, String[] b){//fungsi menghitung rata2
         System.out.println("--Rata-rata Setiap Menu--");
-        int[] totalPerMenu=new int[b.length];
-
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-                totalPerMenu[i]+=a[i][j];
-            }
-        }
+        int[] totalPerMenu=totalMenu(a);
 
         for (int i = 0; i < totalPerMenu.length; i++) {
             double rata2=(double)totalPerMenu[i]/7;

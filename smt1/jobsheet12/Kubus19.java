@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Kubus19 {
         static int hitungLuas(int a){
-            int Luas=a*a;
+            int Luas=6*(a*a);
             return Luas;
         }
 
         static int hitungVolume(int a){
-            int volume=hitungLuas(a)*a;
+            int volume=a*a*a;
             return volume;
         }
 
